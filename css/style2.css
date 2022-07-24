@@ -57,6 +57,20 @@ nav ul li a:hover {
 .bienvenida h1 {
   grid-column: 1/3;
   padding-left: 10px;
+  animation: fadeInLeft;
+  animation-duration: 2s;
+  background: #a1ffce; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    #faffd1,
+    #a1ffce
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .productos {
@@ -69,10 +83,13 @@ nav ul li a:hover {
 .productos h2 {
   grid-column: 2/3;
   grid-row: 1/2;
+  animation: fadeInUp;
+  animation-duration: 2s;
 }
 
 .productos p {
   grid-area: 2/2/3/3;
+  animation: fadeInUp 2s 1s both;
 }
 
 .marcas {
@@ -270,6 +287,25 @@ footer {
 .promociones h1 {
   text-align: center;
   text-transform: uppercase;
+  animation: heartBeat;
+  animation-duration: 2s;
+  background: #ed213a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #93291e,
+    #ed213a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #93291e,
+    #ed213a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .footer_promociones {
@@ -300,7 +336,17 @@ footer {
 
 .card_promociones button {
   margin-top: auto;
-  background: black;
+  background: #f12711; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f5af19,
+    #f12711
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   padding: 0.5rem;
   border: none;
@@ -352,7 +398,17 @@ footer {
 
 .card_eventos button {
   margin-top: auto;
-  background: black;
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8dc26f,
+    #76b852
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8dc26f,
+    #76b852
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   padding: 0.5rem;
   border: none;
