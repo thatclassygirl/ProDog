@@ -13,50 +13,28 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
-  display: block;
 }
 
-.home_navbar_logo {
-  position: absolute;
-  margin-top: 35px;
-}
-
-nav ul {
-  list-style: none;
-  text-align: right;
-}
-
-nav ul li {
-  padding-bottom: 6px;
-}
-
-nav ul li a {
-  color: black;
-  text-decoration: none;
-  padding: 12px 15px;
-}
-
-nav ul li a:hover {
+.nav-item a:hover {
   background-color: #74d98b;
   color: white;
+  border-radius: 12px;
 }
 /* TERMINA HEADER */
 
 /* EMPIEZA INDEX */
+
 .bienvenida {
-  display: grid;
-  grid-template-columns: 15% 45% 25% 15%;
-  grid-template-rows: 300px;
   width: 100%;
   background-image: url(../images/paw-pads.webp);
   background-position: center center;
   background-size: cover;
-  color: white;
+  height: 50vh;
 }
 
 .bienvenida h1 {
-  grid-column: 1/3;
-  padding-left: 10px;
+  padding-left: 20px;
+  padding-top: 20px;
   animation: fadeInLeft;
   animation-duration: 2s;
   background: #a1ffce; /* fallback for old browsers */
@@ -73,198 +51,30 @@ nav ul li a:hover {
   -moz-text-fill-color: transparent;
 }
 
-.productos {
-  display: grid;
-  grid-template-columns: 5% 90% 5%;
-  grid-template-rows: 80px 300px;
-  text-align: center;
+@media screen and (min-width: 960px) {
+  .bienvenida {
+    height: 80vh;
+  }
 }
 
 .productos h2 {
-  grid-column: 2/3;
-  grid-row: 1/2;
   animation: fadeInUp;
   animation-duration: 2s;
 }
 
 .productos p {
-  grid-area: 2/2/3/3;
   animation: fadeInUp 2s 1s both;
 }
 
-.marcas {
-  width: 100%;
-  height: 700px;
-  text-align: center;
-}
-
-.marcas_images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 10px;
-}
-
-.marcas_images img {
-  max-width: 150px;
-}
-
-.nav_menu_title {
-  font-weight: 600;
-  padding-top: 20px;
-  font-size: 15px;
-}
-
-.nav_menu_list {
-  list-style: none;
-  margin: 0;
-  padding: 10px 0px 0px 0px;
-  line-height: 30px;
-  font-size: 12px;
-}
 /* TERMINA INDEX */
 
-/* EMPIEZA FOOTER PARA TODAS LAS PAGINAS */
-footer {
-  background-color: rgb(239, 239, 239);
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+/* EMPIZA SECCION DE NOSOTROS */
 
-.footer_fila {
-  padding-left: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.redes {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  align-items: flex-end;
-}
-
-.icon {
-  width: 60px;
-  height: 60px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 26px;
-  color: #fff;
-  border-radius: 50%;
-  outline: 2px solid #fff;
-  transition-property: outline-offset, outline-color, background-color;
-  transition-duration: 0.25s;
-}
-
-.icon:hover {
-  outline-offset: 4px;
-}
-
-.icon:hover i {
-  animation: shake 0.25s;
-}
-
-.icon--facebook:hover {
-  background-color: #1363df;
-  outline-color: #243a73;
-}
-
-.icon--instagram:hover {
-  background-image: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  outline-color: #a02d76;
-}
-
-.icon--twitter:hover {
-  background-color: #47b5ff;
-  outline-color: #1363df;
-}
-
-.icon--whatsapp:hover {
-  background-color: #5fd068;
-  outline-color: #4b8673;
-}
-/* TERMINA FOOTER */
-
-/* EMPIEZA SECCIÓN NOSOTROS*/
-.nosotros {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-}
-
-.nosotros_parrafo {
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.nosotros_collab {
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.nosotros_parrafo h1 {
-  text-align: center;
-  font-weight: 600;
-}
-
-.nosotros_parrafo img {
-  margin-top: 50px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-height: 600px;
-  object-fit: contain;
-}
-
-.nosotros p {
-  padding-top: 0px;
-  text-align: center;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 15px;
-}
-
-.nosotros_collab_images {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  text-align: center;
-  margin-top: 15px;
-}
-
-.collab_text1 {
-  align-self: flex-end;
-  padding-right: 30px;
-}
-
-.collab_text2 {
-  align-self: flex-end;
-  padding-right: 10px;
-}
-
-.nosotros_collab_images img {
-  max-width: 60px;
-}
-
-.nosotros_collab_logo img {
-  display: block;
-  margin: auto;
+.collab--logo img {
   max-width: 150px;
-  padding-top: 10px;
 }
-/* TERMINA SECCIÓN DE NOSOTROS */
+
+/* TERMINA SECCION DE NOSOTROS */
 
 /* EMPIEZA SECCION DE PROMOCIONES */
 #promociones {
@@ -497,62 +307,6 @@ footer {
 /* EMPIEZA RESPONSIVE MIN WIDTH 600PX */
 
 @media screen and (min-width: 600px) {
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-  .home_navbar_logo {
-    position: absolute;
-    margin-top: -10px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .bienvenida {
-    display: grid;
-    grid-template-columns: 20% 30% 30% 20%;
-    grid-template-rows: 400px;
-    font-size: 18px;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .productos {
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
-  }
-  .productos p {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .footer_fila {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footer_menu {
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .footer_fila {
-    padding-left: 10px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .redes {
-    display: flex;
-    flex-direction: row;
-    column-gap: 25px;
-    padding: 0px 0px 20px 0px;
-  }
-}
-
-@media screen and (min-width: 600px) {
   .contacto_collab_images {
     display: flex;
     justify-content: space-around;
@@ -562,53 +316,6 @@ footer {
 /* TERMINA RESPONSIVE MIN WIDTH 600PX */
 
 /* EMPIEZA RESPONSIVE MIN WIDTH 1200PX */
-
-@media screen and (min-width: 1200px) {
-  .bienvenida {
-    display: grid;
-    grid-template-columns: 30% 20% 40% 10%;
-    grid-template-rows: 700px;
-    font-size: 35px;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .productos {
-    display: grid;
-    grid-template-columns: 200px 1fr 200px;
-    grid-template-rows: 80px 300px;
-  }
-  .productos h2 {
-    font-size: 25px;
-  }
-  .productos p {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .marcas {
-    height: 300px;
-  }
-  .marcas_images {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 10px;
-    margin-top: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer_fila {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footer_menu {
-    margin-bottom: 50px;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .nosotros_parrafo p {
