@@ -77,22 +77,6 @@ header {
 /* TERMINA SECCION DE NOSOTROS */
 
 /* EMPIEZA SECCION DE PROMOCIONES */
-#promociones {
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
-  grid-template-rows: auto auto auto;
-}
-
-.header_promociones {
-  grid-column: 1/4;
-  grid-row: 1/2;
-}
-
-.main_promociones {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  margin-bottom: 40px;
-}
 
 .promociones h1 {
   text-align: center;
@@ -118,16 +102,11 @@ header {
   -moz-text-fill-color: transparent;
 }
 
-.footer_promociones {
-  grid-column: 1/4;
-  grid-row: 3/4;
-}
-
 .card_promociones {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
-  margin-top: 50px;
+  margin: 50px 15px 0px 15px;
 }
 
 .container_promociones {
@@ -164,31 +143,13 @@ header {
   font-size: 1.2rem;
   cursor: pointer;
 }
+
+.card_promociones button:hover {
+  background: #94b49f;
+}
 /* TERMINA SECCIÓN DE PROMOCIONES */
 
 /* EMPIEZA SECCIÓN DE EVENTOS */
-
-#eventos {
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
-  grid-template-rows: auto auto auto;
-}
-
-.header_eventos {
-  grid-column: 1/4;
-  grid-row: 1/2;
-}
-
-.main_eventos {
-  grid-column: 1/4;
-  grid-row: 2/3;
-  margin-bottom: 40px;
-}
-
-.footer_eventos {
-  grid-column: 1/4;
-  grid-row: 3/4;
-}
 
 .eventos h1 {
   text-align: center;
@@ -241,30 +202,13 @@ header {
   grid-column: 2/4;
 }
 
+.card_general button:hover {
+  background: black;
+}
+
 /* TERMINA SECCIÓN DE EVENTOS */
 
 /* EMPIEZA LA SECCIÓN DE CONTACTO */
-
-#contacto {
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-template-rows: auto auto auto;
-}
-
-.header_contacto {
-  grid-column: 1/4;
-  grid-row: 1/2;
-}
-
-.main_contacto {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.footer_contacto {
-  grid-column: 1/4;
-  grid-row: 3/4;
-}
 
 .contacto {
   margin-bottom: 20px;
@@ -318,12 +262,6 @@ header {
 /* EMPIEZA RESPONSIVE MIN WIDTH 1200PX */
 
 @media screen and (min-width: 1200px) {
-  .nosotros_parrafo p {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
   .form_contacto {
     flex-direction: row;
     justify-content: space-between;
@@ -333,9 +271,6 @@ header {
   }
   .collab {
     margin-right: 40px;
-  }
-  form {
-    width: 50%;
   }
 }
 
