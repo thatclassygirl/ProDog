@@ -3,18 +3,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
 /*  EMPIEZA HEADER PARA TODAS LAS PAGINAS */
-header {
-  background-color: #68def4;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
 .nav-item a:hover {
   background-color: #74d98b;
   color: white;
@@ -25,7 +16,6 @@ header {
 /* EMPIEZA INDEX */
 
 .bienvenida {
-  width: 100%;
   background-image: url(../images/paw-pads.webp);
   background-position: center center;
   background-size: cover;
@@ -33,8 +23,6 @@ header {
 }
 
 .bienvenida h1 {
-  padding-left: 20px;
-  padding-top: 20px;
   animation: fadeInLeft;
   animation-duration: 2s;
   background: #a1ffce; /* fallback for old browsers */
@@ -68,7 +56,7 @@ header {
 
 /* TERMINA INDEX */
 
-/* EMPIZA SECCION DE NOSOTROS */
+/* EMPIEZA SECCION DE NOSOTROS */
 
 .collab--logo img {
   max-width: 150px;
