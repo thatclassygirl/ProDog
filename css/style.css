@@ -5,83 +5,62 @@ body {
   box-sizing: border-box;
 }
 
-/*  EMPIEZA HEADER PARA TODAS LAS PAGINAS */
 .nav-item a:hover {
   background-color: #74d98b;
   color: white;
   border-radius: 12px;
-}
-/* TERMINA HEADER */
-
-/* EMPIEZA INDEX */
-
+} /* Empiezan estilos de Index */
 .bienvenida {
   background-image: url(../images/paw-pads.webp);
   background-position: center center;
   background-size: cover;
   height: 50vh;
 }
-
+@media screen and (min-width: 960px) {
+  .bienvenida {
+    height: 80vh;
+  }
+}
 .bienvenida h1 {
   animation: fadeInLeft;
   animation-duration: 2s;
   background: #a1ffce; /* fallback for old browsers */
-  background: linear-gradient(
-    to right,
-    #faffd1,
-    #a1ffce
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #faffd1, #a1ffce); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-}
-
-@media screen and (min-width: 960px) {
-  .bienvenida {
-    height: 80vh;
-  }
 }
 
 .productos h2 {
   animation: fadeInUp;
   animation-duration: 2s;
 }
-
 .productos p {
   animation: fadeInUp 2s 1s both;
 }
 
-/* TERMINA INDEX */
-
-/* EMPIEZA SECCION DE NOSOTROS */
-
-.collab--logo img {
+/* Terminan estilos de Index */
+/* Empiezan estilos de Nosotros */
+.nosotros .collab--logo img {
   max-width: 150px;
 }
+.nosotros .collab--images img {
+  max-width: 100px;
+}
 
-/* TERMINA SECCION DE NOSOTROS */
-
-/* EMPIEZA SECCION DE PROMOCIONES */
-
+/* Terminan estilos de Nosotros */
+/* Empiezan estilos de Promociones */
 .promociones h1 {
   text-align: center;
   text-transform: uppercase;
   animation: heartBeat;
   animation-duration: 2s;
   background: #ed213a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #93291e,
-    #ed213a
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #93291e,
-    #ed213a
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #93291e, #ed213a); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #93291e, #ed213a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
@@ -89,41 +68,17 @@ body {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
-
-.card_promociones {
+.promociones .card_promociones {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin: 50px 15px 0px 15px;
 }
-
-.container_promociones {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid gray;
-  border-radius: 1rem;
-  padding: 2rem;
-}
-
-.container_promociones img {
-  order: -1;
-  align-self: center;
-  max-width: 150px;
-}
-
-.card_promociones button {
+.promociones .card_promociones button {
   margin-top: auto;
   background: #f12711; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f5af19,
-    #f12711
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f5af19,
-    #f12711
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   padding: 0.5rem;
   border: none;
@@ -131,43 +86,42 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
 }
-
-.card_promociones button:hover {
+.promociones .card_promociones button:hover {
   background: #94b49f;
 }
-/* TERMINA SECCIÓN DE PROMOCIONES */
+.promociones .card_promociones .container_promociones {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.promociones .card_promociones .container_promociones img {
+  order: -1;
+  align-self: center;
+  max-width: 150px;
+}
 
-/* EMPIEZA SECCIÓN DE EVENTOS */
-
+/* Terminan estilos de Promociones */
+/* Empiezan estilos de Eventos */
 .eventos h1 {
   text-align: center;
 }
-
 .eventos img {
   width: 100%;
 }
-
-.card_eventos {
+.eventos .card_eventos {
   display: grid;
   grid-template-columns: 10% auto auto 10%;
   grid-template-rows: auto auto;
   column-gap: 10px;
   margin-top: 30px;
 }
-
-.card_eventos button {
+.eventos .card_eventos button {
   margin-top: auto;
   background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #8dc26f,
-    #76b852
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8dc26f,
-    #76b852
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #8dc26f, #76b852); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8dc26f, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   padding: 0.5rem;
   border: none;
@@ -176,8 +130,13 @@ body {
   cursor: pointer;
   width: 120px;
 }
-
-.container {
+.eventos .card_eventos .card_general {
+  grid-column: 2/4;
+}
+.eventos .card_eventos .card_general button:hover {
+  background: black;
+}
+.eventos .card_eventos .card_general .container {
   border: 1px solid gray;
   border-radius: 20px;
   padding: 10px;
@@ -186,80 +145,55 @@ body {
   margin-top: 15px;
 }
 
-.card_general {
-  grid-column: 2/4;
-}
-
-.card_general button:hover {
-  background: black;
-}
-
-/* TERMINA SECCIÓN DE EVENTOS */
-
-/* EMPIEZA LA SECCIÓN DE CONTACTO */
-
+/* Terminan estilos de Eventos */
+/* Empiezan estilos de Contacto */
 .contacto {
   margin-bottom: 20px;
 }
-
-.contacto_collab_logo {
+.contacto .form_contacto {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .contacto .form_contacto {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacto .contacto_collab {
+    padding-right: 9rem;
+  }
+}
+.contacto .contacto_collab .contacto_collab_logo {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
-.contacto_collab_logo img {
+.contacto .contacto_collab .contacto_collab_logo img {
   width: 150px;
   display: block;
   margin: auto;
 }
-
-.contacto_collab_images {
+.contacto .contacto_collab .contacto_collab_images {
   text-align: center;
 }
-
-.collab img {
+.contacto .contacto_collab .contacto_collab_images img {
   display: block;
   margin: auto;
   width: 100px;
 }
-
-.time img {
-  display: block;
-  margin: auto;
-  width: 100px;
-}
-
-.form_contacto {
-  display: flex;
-  flex-direction: column;
-}
-
-/* TERMINA LA SECCIÓN DE CONTACTO */
-
-/* EMPIEZA RESPONSIVE MIN WIDTH 600PX */
-
 @media screen and (min-width: 600px) {
-  .contacto_collab_images {
+  .contacto .contacto_collab .contacto_collab_images {
     display: flex;
     justify-content: space-around;
   }
 }
-
-/* TERMINA RESPONSIVE MIN WIDTH 600PX */
-
-/* EMPIEZA RESPONSIVE MIN WIDTH 1200PX */
-
 @media screen and (min-width: 1200px) {
-  .form_contacto {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .contacto_collab {
-    padding-right: 9rem;
-  }
-  .collab {
+  .contacto .contacto_collab .contacto_collab_images .collab {
     margin-right: 40px;
   }
 }
 
-/* TERMINA RESPONSIVE MIN WIDTH 1200PX */
+/* Terminan estilos de Contacto */
+
+/*# sourceMappingURL=style.css.map */
