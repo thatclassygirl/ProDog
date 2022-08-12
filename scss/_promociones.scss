@@ -1,0 +1,32 @@
+/* Empiezan estilos de Promociones */
+.promociones {
+  h1 {
+    @include important-text;
+    animation: map-get($animations, heartB);
+    animation-duration: 2s;
+  }
+
+  .btn {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .btn--comprar {
+    @extend .btn;
+    background-color: #809a6f;
+    color: $colorW;
+  }
+
+  .btn--comprar:hover {
+    background-color: black;
+    color: $colorW;
+  }
+
+  img {
+    max-width: 150px;
+  }
+}
+/* Terminan estilos de Promociones */

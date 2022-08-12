@@ -1,0 +1,23 @@
+/* Empiezan estilos de Eventos */
+.eventos {
+  .btn {
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .btn--inscribirse {
+    @extend .btn;
+    background-color: #cc9c75;
+    color: $colorW;
+  }
+
+  .btn--inscribirse:hover {
+    background-color: #a25b5b;
+    color: $colorW;
+  }
+}
+
+/* Terminan estilos de Eventos */

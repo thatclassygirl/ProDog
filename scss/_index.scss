@@ -1,0 +1,40 @@
+/* Empiezan estilos de Index */
+.bienvenida {
+  background-image: url(../images/paw-pads.webp);
+  background-position: center center;
+  background-size: cover;
+  height: 50vh;
+
+  @media screen and (min-width: 960px) {
+    height: 80vh;
+  }
+
+  h1 {
+    animation: map-get($animations, fadeIL);
+    animation-duration: 2s;
+    background: map-get($greengradient, verdeo); /* fallback for old browsers */
+    background: linear-gradient(
+      to right,
+      map-get($greengradient, verdec),
+      map-get($greengradient, verdeo)
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+}
+
+.productos {
+  h2 {
+    animation: map-get($animations, fadeIU);
+    animation-duration: 2s;
+  }
+
+  p {
+    animation: map-get($animations, fadeIU) 2s 1s both;
+  }
+}
+/* Terminan estilos de Index */
