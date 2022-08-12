@@ -1,3 +1,21 @@
 $myWidth: 100%;
 $grayBorder: gray;
 $colorW: white;
+$buttonColor: #94b49f;
+
+$greengradient: (
+  verdec: #faffd1,
+  verdeo: #a1ffce,
+);
+
+$animations: (
+  fadeIU: fadeInUp,
+  fadeIL: fadeInLeft,
+  heartB: heartBeat,
+);
+
+@mixin important-text {
+  color: #b33030;
+  font-size: 40px;
+  text-transform: uppercase;
+}

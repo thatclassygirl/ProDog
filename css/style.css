@@ -9,7 +9,9 @@ body {
   background-color: #74d98b;
   color: white;
   border-radius: 12px;
-} /* Empiezan estilos de Index */
+}
+
+/* Empiezan estilos de Index */
 .bienvenida {
   background-image: url(../images/paw-pads.webp);
   background-position: center center;
@@ -54,144 +56,56 @@ body {
 /* Terminan estilos de Nosotros */
 /* Empiezan estilos de Promociones */
 .promociones h1 {
-  text-align: center;
+  color: #b33030;
+  font-size: 40px;
   text-transform: uppercase;
   animation: heartBeat;
   animation-duration: 2s;
-  background: #ed213a; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #93291e, #ed213a); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #93291e, #ed213a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
 }
-.promociones .card_promociones {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  margin: 50px 15px 0px 15px;
-}
-.promociones .card_promociones button {
-  margin-top: auto;
-  background: #f12711; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f5af19, #f12711); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
-  padding: 0.5rem;
+.promociones .btn, .promociones .eventos .btn--inscribirse, .eventos .promociones .btn--inscribirse, .promociones .btn--comprar {
   border: none;
-  border-radius: 1rem;
-  font-size: 1.2rem;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
   cursor: pointer;
 }
-.promociones .card_promociones button:hover {
-  background: #94b49f;
+.promociones .btn--comprar {
+  background-color: #809a6f;
+  color: white;
 }
-.promociones .card_promociones .container_promociones {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid gray;
-  border-radius: 1rem;
-  padding: 2rem;
+.promociones .btn--comprar:hover {
+  background-color: black;
+  color: white;
 }
-.promociones .card_promociones .container_promociones img {
-  order: -1;
-  align-self: center;
+.promociones img {
   max-width: 150px;
 }
 
 /* Terminan estilos de Promociones */
 /* Empiezan estilos de Eventos */
-.eventos h1 {
-  text-align: center;
-}
-.eventos img {
-  width: 100%;
-}
-.eventos .card_eventos {
-  display: grid;
-  grid-template-columns: 10% auto auto 10%;
-  grid-template-rows: auto auto;
-  column-gap: 10px;
-  margin-top: 30px;
-}
-.eventos .card_eventos button {
-  margin-top: auto;
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #8dc26f, #76b852); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #8dc26f, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
-  padding: 0.5rem;
+.eventos .btn, .eventos .btn--inscribirse, .eventos .promociones .btn--comprar, .promociones .eventos .btn--comprar {
   border: none;
-  border-radius: 1rem;
-  font-size: 1.2rem;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
   cursor: pointer;
-  width: 120px;
 }
-.eventos .card_eventos .card_general {
-  grid-column: 2/4;
+.eventos .btn--inscribirse {
+  background-color: #cc9c75;
+  color: white;
 }
-.eventos .card_eventos .card_general button:hover {
-  background: black;
-}
-.eventos .card_eventos .card_general .container {
-  border: 1px solid gray;
-  border-radius: 20px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  margin-top: 15px;
+.eventos .btn--inscribirse:hover {
+  background-color: #a25b5b;
+  color: white;
 }
 
 /* Terminan estilos de Eventos */
 /* Empiezan estilos de Contacto */
-.contacto {
-  margin-bottom: 20px;
+.contacto_collab .contacto_collab_logo img {
+  max-width: 150px;
 }
-.contacto .form_contacto {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 1200px) {
-  .contacto .form_contacto {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacto .contacto_collab {
-    padding-right: 9rem;
-  }
-}
-.contacto .contacto_collab .contacto_collab_logo {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.contacto .contacto_collab .contacto_collab_logo img {
-  width: 150px;
-  display: block;
-  margin: auto;
-}
-.contacto .contacto_collab .contacto_collab_images {
-  text-align: center;
-}
-.contacto .contacto_collab .contacto_collab_images img {
-  display: block;
-  margin: auto;
-  width: 100px;
-}
-@media screen and (min-width: 600px) {
-  .contacto .contacto_collab .contacto_collab_images {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacto .contacto_collab .contacto_collab_images .collab {
-    margin-right: 40px;
-  }
+.contacto_collab .contacto_collab_images img {
+  max-width: 100px;
 }
 
 /* Terminan estilos de Contacto */
