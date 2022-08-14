@@ -5,10 +5,16 @@ body {
   box-sizing: border-box;
 }
 
+.nav-item {
+  transition: transform 0.1s;
+}
 .nav-item a:hover {
-  background-color: #74d98b;
   color: white;
-  border-radius: 12px;
+  transform: scale(1.15);
+}
+
+.nav-item:hover .active {
+  transform: none;
 }
 
 /* Empiezan estilos de Index */
@@ -62,6 +68,13 @@ body {
   animation: heartBeat;
   animation-duration: 2s;
 }
+.promociones s {
+  color: #b2b1b9;
+}
+.promociones span {
+  color: #c21010;
+  font-size: 20px;
+}
 .promociones .btn, .promociones .eventos .btn--inscribirse, .eventos .promociones .btn--inscribirse, .promociones .btn--comprar {
   border: none;
   padding: 10px 20px;
@@ -74,11 +87,12 @@ body {
   color: white;
 }
 .promociones .btn--comprar:hover {
-  background-color: black;
+  background-color: #df7861;
   color: white;
 }
 .promociones img {
-  max-width: 150px;
+  max-width: 140px;
+  padding-top: 15px;
 }
 
 /* Terminan estilos de Promociones */
