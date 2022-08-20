@@ -63,10 +63,9 @@ body {
 /* Empiezan estilos de Promociones */
 .promociones h1 {
   color: #b33030;
-  font-size: 40px;
   text-transform: uppercase;
-  animation: heartBeat;
-  animation-duration: 2s;
+  animation: flash;
+  animation-duration: 3s;
 }
 .promociones s {
   color: #b2b1b9;
