@@ -12,10 +12,10 @@ $animations: (
   fadeIU: fadeInUp,
   fadeIL: fadeInLeft,
   heartB: heartBeat,
+  flash: flash,
 );
 
 @mixin important-text {
   color: #b33030;
-  font-size: 40px;
   text-transform: uppercase;
 }

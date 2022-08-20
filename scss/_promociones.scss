@@ -2,8 +2,8 @@
 .promociones {
   h1 {
     @include important-text;
-    animation: map-get($animations, heartB);
-    animation-duration: 2s;
+    animation: map-get($animations, flash);
+    animation-duration: 3s;
   }
 
   s {
